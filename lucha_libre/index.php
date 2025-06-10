@@ -8,15 +8,15 @@
   <style>
     body {
       background-color: #f0f2f5;
-      color: #3a1a00; /* Marrón oscuro para buen contraste */
+      color: #3a1a00;
       font-weight: bold;
-      text-shadow: 1px 1px 2px rgba(0,0,0,0.2); /* sombra sutil para texto */
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
     }
     .container {
       margin-top: 60px;
     }
     h2 {
-      color: #a43400; /* rojo quemado para destacar */
+      color: #a43400;
       text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
       font-family: 'Bangers', cursive, Arial, sans-serif;
     }
@@ -36,14 +36,33 @@
 </head>
 <body>
 
-<?php include 'includes/navbar.php'; ?>
+<!-- Menú de navegación estático (puedes copiar el contenido de navbar.php aquí si quieres) -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Lucha Libre</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="registrar_luchador.php">Registrar Luchador</a></li>
+        <li class="nav-item"><a class="nav-link" href="registrar_evento.html">Registrar Evento</a></li>
+        <li class="nav-item"><a class="nav-link" href="registrar_combate.html">Registrar Combate</a></li>
+        <li class="nav-item"><a class="nav-link" href="ver_luchadores.html">Ver Luchadores</a></li>
+        <li class="nav-item"><a class="nav-link" href="informe.html">Informe</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
 <div class="container text-center">
   <h2 class="mb-4">Bienvenido al sistema de gestión de lucha libre</h2>
   <p class="mb-5">Utiliza el menú superior para registrar luchadores, eventos y combates.</p>
 
   <!-- Imagen temática -->
-  <img src="../lucha_libre/images/historia_lucha_libre_mexico-1536x1024.webp" alt="Lucha Libre" class="imagen-lucha" />
+  <img src="images/historia_lucha_libre_mexico-1536x1024.webp" alt="Lucha Libre" class="imagen-lucha" />
 </div>
 
 </body>
